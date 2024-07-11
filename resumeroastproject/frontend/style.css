@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #5256ad;
+}
+
+.drag-area {
+  border: 2px dashed #fff;
+  height: 800px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.drag-area.active {
+  border: 2px solid #fff;
+}
+
+.drag-area .icon {
+  font-size: 100px;
+  color: #5256ad;
+}
+
+.drag-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #5256ad;
+}
+
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #5256ad;
+  margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #5256ad;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area button:hover {
+  background: #3d3f7f;
+}
+
+.drag-area .upload-info {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.drag-area .upload-info img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.drag-area .upload-info iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.drag-area .upload-info p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5256ad;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.drag-area .loading {
+  display: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5256ad;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.drag-area .output-box {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 20px;
+  font-weight: 500;
+  color: #8385b0;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  overflow: auto;
+  box-sizing: border-box; 
+}
+
+.drag-area .go-back-button {
+  display: none;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #f44336;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.drag-area .go-back-button:hover {
+  background: #d32f2f;
+}

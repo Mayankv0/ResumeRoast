@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    z-index: 1;
+    font-family: "Courier New", Courier, monospace;
+    overflow-y: hidden;
+}
+body{
+    background-image: url("../Untitled.svg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.title {
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Dark gray color */
+    margin-bottom: 0.5em; /* Adjust margin bottom for spacing */
+}
+
+.subtitle {
+    color: black; /* Gray color */
+    margin-bottom: 20px; /* Add some spacing below the subtitle */
+}
+
+.audio-player {
+    margin-bottom: 20px; /* Add margin below the audio player */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Dark gray color */
+    margin-bottom: 0.5em; /* Adjust margin bottom for spacing */
+}
+
+.subtitle {
+    color: black; /* Gray color */
+    margin-bottom: 20px; /* Add some spacing below the subtitle */
+}
+
+.user-input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-input input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.drop-area.active {
+    border-color: #007bff;
+}
+
+#dragText {
+    margin-bottom: 10px;
+}
+
+.box {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    background-color: #f9f9f9;
+}
+
+.box.active {
+    display: block;
+}
+
+.quotes {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#loader-container {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.psoload {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.straight,
+.curve,
+.center,
+.inner {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    animation: move 2s infinite;
+}
+
+.straight {
+    left: 0;
+    animation-delay: -1.5s;
+}
+
+.curve {
+    top: 0;
+    animation-delay: -1s;
+}
+
+.inner {
+    right: 0;
+    animation-delay: -0.5s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100%, 0);
+    }
+    50% {
+        transform: translate(100%, 100%);
+    }
+    75% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
